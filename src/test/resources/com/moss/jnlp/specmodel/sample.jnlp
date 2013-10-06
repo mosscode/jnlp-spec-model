@@ -1,0 +1,35 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<jnlp codebase="http://baz.foobar.com/foo-bar-app/" href="http://baz.foobar.com/foo-bar-app/launch.jnlp">
+	<information> 
+		<title>Wonderful Foo Bar App</title>
+		<vendor>Foo Bar Inc.</vendor>
+		<description>My Foo, My Bar, App</description>
+		<offline-allowed/>
+		<shortcut online="true"> 
+			<desktop/> 
+			<menu submenu="Foo Bar" />
+		</shortcut>
+	</information>
+   <update check="always" policy="always"/>
+	<resources>
+		<j2se version="1.5+" initial-heap-size="256m" max-heap-size="512m" />
+		<jar href="http://download.foobar.com/jaxb-api-2.0.jar"/>
+		<jar href="http://download.foobar.com/jsr173_api-1.0.jar"/>
+		<jar href="http://download.foobar.com/activation-1.1.jar"/>
+		<jar href="http://download.foobar.com/telephone-xml-0.1.0.jar"/>
+		<jar href="http://download.foobar.com/jaxb-impl-2.0.5.jar"/>
+
+		<property name="user.timezone" value="America/New_York"/>
+	</resources>
+	<security>
+		<all-permissions/>
+	</security>
+	<application-desc main-class="com.foobar.App">
+		<argument>my first argument</argument>
+
+		<argument>my rebuttal</argument>
+
+		<argument>my final argument</argument>
+
+	</application-desc>
+</jnlp>

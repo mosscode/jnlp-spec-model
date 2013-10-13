@@ -1,5 +1,5 @@
 <?xml version="1.0"  encoding="UTF-8"?>
-<jnlp codebase="http://baz.foobar.com/foo-bar-app/" href="http://baz.foobar.com/foo-bar-app/launch.jnlp">
+<jnlp href="http://baz.foobar.com/foo-bar-app/launch.jnlp" codebase="http://baz.foobar.com/foo-bar-app/">
 	<information> 
 		<title>Wonderful Foo Bar App</title>
 		<vendor>Foo Bar Inc.</vendor>
@@ -10,16 +10,16 @@
 			<menu submenu="Foo Bar" />
 		</shortcut>
 	</information>
-   <update check="always" policy="always"/>
+   <update policy="always" check="always"/>
 	<resources>
-		<j2se version="1.5+" initial-heap-size="256m" max-heap-size="512m" />
+		<j2se max-heap-size="512m" initial-heap-size="256m" version="1.5+" />
 		<jar href="http://download.foobar.com/jaxb-api-2.0.jar"/>
 		<jar href="http://download.foobar.com/jsr173_api-1.0.jar"/>
 		<jar href="http://download.foobar.com/activation-1.1.jar"/>
 		<jar href="http://download.foobar.com/telephone-xml-0.1.0.jar"/>
 		<jar href="http://download.foobar.com/jaxb-impl-2.0.5.jar"/>
 
-		<property name="user.timezone" value="America/New_York"/>
+		<property value="America/New_York" name="user.timezone"/>
 	</resources>
 	<security>
 		<all-permissions/>
